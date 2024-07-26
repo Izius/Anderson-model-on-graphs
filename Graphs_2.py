@@ -213,7 +213,7 @@ class Graphs:
 
     def fdme(self, o_vec):  # fluctuations of the diagonal matrix elements
 
-        return np.mean(np.diff(o_vec))
+        return np.mean(np.abs(np.diff(o_vec)))
 
 
 # Arguments:
