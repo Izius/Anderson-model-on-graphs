@@ -185,7 +185,7 @@ class Graphs:
         a_vec = []
 
         for nv in nearest_vecs:
-            a = np.sqrt(self.N/2)*(np.real(nv[i])*np.real(nv[j]) + np.imag(nv[i])*np.imag(nv[j]))
+            a = 2*np.sqrt(self.N/2)*(np.real(nv[i])*np.real(nv[j]) + np.imag(nv[i])*np.imag(nv[j]))
             a_vec.append(a)
 
 
